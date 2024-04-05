@@ -1,0 +1,43 @@
+.parent {
+    display: grid;
+    /* grid-template-columns: 50px 50px 50px; */
+    /* grid-template-columns: repeat(5, 50px); */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(autofit,minmax(100px,1fr )); */
+    grid-template-rows: 50px 77px 58px;
+
+    /* Provide gap between the blocks  */
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: blue;
+    grid-auto-rows: 30px;
+    border: 10px solid blue;
+
+}
+
+.child {
+    background-color: rgb(196, 250, 255);
+    /* Center the child number */
+
+    display: flex;
+
+    /* make content in center */
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: rgb(196, 250, 255);
+}
+
+.menu {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.footer {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
