@@ -1,7 +1,7 @@
-console.log("...APP started")
+console.log(".....APP started......")
 
 function callAPI(){
-    fetch("https://newsapi.org/v2/everything?q=tesla&from=2024-03-08&sortBy=publishedAt&apiKey=fdf76612d6434ae18e6da7dc2e95679f")
+    fetch("https://newsapi.org/v2/everything?q=tesla&from=2024-03-08&sortBy=publishedAt&apiKey=bdb25ca009b14655bedefbc1fd482147")
     .then((res)=>{
         return res .json();
     })
